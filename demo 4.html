@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form types</title>
+</head>
+<body>
+	<form action="basic.html">
+		Age: <input type="number" name="age" /><br />
+		Phone<input type="tel" name="phone"><br>
+		Date<input type="date"  name="date" ><br> 
+		Month<input type="month" name="month" ><br>
+		Min Range <input type="range" name="num1" 
+		          onchange="n1.value=parseInt(num1.value)" /> 
+    	<output name="n1"  ></output><br>
+    	Max Range <input type="range" name="num2"  onchange="n2.value=parseInt(num2.value)"/> 
+    	<output name="n2"  ></output><br>
+
+		Date-Time<input type="datetime-local" name="datetime"><br>
+		Email<input type="email" name="email"><br>
+		Color<input type="color" name="color"><br>
+		<input type="Submit" value="Add User">
+
+		<input type="button" value="Show Range" 
+		onClick = "result.value = parseInt(num1.value)+parseInt(num2.value)">
+    	<output name="result"  ></output>
+	</form>
+</body>
+</html> 
