@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfunc()
+        {
+         var s =document.getElementById("myid").value;
+         document.getElementById("demo").innerHTML=s;
+        }
+    </script>
+</head>
+<body>
+  Enter comments
+    <input type="text" id="myid" onkeyup="myfunc()">
+    <div style="background-color: chartreuse;">
+        
+        <span id="demo" ></span>
+    
+</body>
+</html>

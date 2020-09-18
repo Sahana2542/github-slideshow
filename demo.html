@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfun()
+        {
+var name=localStorage.getItem("username ");
+var msg=localStorage.getItem("message ");
+
+document.write(name );
+document.write(msg);
+
+        }
+    </script>
+</head>
+<body>
+    <input type="button" onclick="myfun()" value="click">
+    
+</body>
+</html>

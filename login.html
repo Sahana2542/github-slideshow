@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+function validate()
+{
+    var username=document.getElementById("username").value;
+    var password=document.getElementById("password").value;
+    if(username=="admin" && password=="admin123#")
+    {
+        alert("Login successfull");
+        window.location="flag.html";
+    }
+    else{
+        alert ("Login failed");
+    }
+}
+    </script>
+</head>
+<body>
+ 
+    <h2 style ="text-align: center;">Login form</h2>
+    
+    
+    <form id="form_id" method="post" name="myform"></form>
+    <table  align="center">
+        <tr>
+            <td>
+   Username</td>
+  <td> <input type="text" name ="username" id="username"></td> </tr>
+    <tr><td>
+ Password </td>
+  <td> <input type="password" name ="password" id="password"></td></tr>
+  <tr> <td> <input type="button" value="login" id="submit" onclick="validate()"></td>
+  </tr></table></body>
+    
+    </form>
+      
+    

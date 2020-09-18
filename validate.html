@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- localStorage object stores data with no expiration date. 
+        The data will not be deleted when the browser is closed
+        will be available the next day, week, or year. -->
+    <script>
+        function storeName(){
+            username = document.getElementById("username").value;
+            if(document.getElementById("username").value==""){
+		alert("enter your name");
+		document.myform.uname.focus();
+            }
+        localStorage.setItem('username ', username);
+        localStorage.setItem('message ', 'have a great day')
+        document.myform.submit();}
+      
+    </script>
+</head>
+<body>
+    <form action="demo.html" name="myform">
+    Name<input type= "text"   id="username">
+    <input type="button" value="Save" onclick="storeName()">
+    <div id="myid"></div>
+</form>
+</body>
+</html>

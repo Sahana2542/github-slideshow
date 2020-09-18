@@ -1,0 +1,51 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title> 
+        Documents
+    </title> 
+</head> 
+  
+<body style="text-align:center;"> 
+      
+ 
+    
+      
+    <select id="arr"></select> 
+      
+    <br><br> 
+      
+    <button onclick="myfun();"> 
+        click here 
+    </button> 
+      
+    <p id="gfg" style="font-size: 26px; 
+        font-weight: bold;color: green;"> 
+    </p> 
+      
+    <script> 
+       // var up = document.getElementById('geeks'); 
+       // var down = document.getElementById('gfg'); 
+        var select = document.getElementById("arr"); 
+        var elmts = ["Tv", "laptop", "mobile", ]; 
+        up.innerHTML = "Click on the button to " 
+                    + "perform the operation"+ 
+                    ".<br>Array - [" + elmts + "]"; 
+  
+        function myfun() { 
+            for (var i = 0; i < elmts.length; i++) { 
+                var optn = elmts[i]; 
+                var el = document.createElement("option"); 
+                el.textContent = optn; 
+                el.value = optn; 
+                select.appendChild(el); 
+            } 
+            document.getElementById(elmts.indexOf("Tv").innerHTML="Hi"
+        
+         //   down.innerHTML = "Elements Added"; 
+        } 
+    </script> 
+</body> 
+  
+</html> 
